@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+{% load static %}
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+    <link href="{% static './images_project/services/1.png' %}"  rel="shortcut icon" type="image/x-icon">
+
+    <!-- Stylesheets
+	============================================= -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Lato:300,400,600,700|Parisienne&display=swap"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'css/dark.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'one-page/onepage.css' %}" type="text/css" />
+
+    <!-- Writer Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="{% static 'demos/writer/writer.css' %}" type="text/css" />
+    <!-- / -->
+
+    <link rel="stylesheet" href="{% static 'css/font-icons.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'one-page/css/et-line.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css" />
+
+    <!-- Writer Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="{%static 'css/colors.php?color=FFC013' %}" type="text/css" />
+    <link rel="stylesheet" href="{%static 'demos/writer/css/fonts.css' %}" type="text/css" />
+    <!-- / -->
+
+    <link rel="stylesheet" href="{% static 'css/colors.php?color=7E9680' %}" type="text/css" /> <!-- Yoga Theme Color -->
+    <link rel="stylesheet" href="{% static 'demos/yoga/css/fonts.css' %}" type="text/css" /> <!-- Yoga Theme Font -->
+    <link rel="stylesheet" href="{% static 'demos/yoga/yoga.css' %}" type="text/css" /> <!-- Yoga Theme Custom CSS -->
+
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="{% static 'include/rs-plugin/css/settings.css' %}" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{% static 'include/rs-plugin/css/layers.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'include/rs-plugin/css/navigation.css' %}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Document Title
+	============================================= -->
+    <title>Mary H.H.M</title>
+
+</head>
+
+<body class="sticky-footer stretched">
+
+    <!-- Document Wrapper
+	============================================= -->
+    <div id="wrapper" class="clearfix">
+    
+    {% include 'tm/include/header.html' %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% include 'tm/include/footer.html' %}
+
+    </div><!-- #wrapper end -->
+
+    <!-- Go To Top
+	============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- JavaScripts
+	============================================= -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/plugins.min.js' %}"></script>
+    <script src="{% static 'demos/writer/js/hover3d.js' %}"></script>
+
+    <!-- Footer Scripts
+	============================================= -->
+    <script src="{% static 'js/functions.js' %}"></script>
+
+    <script src="{% static 'include/rs-plugin/js/jquery.themepunch.tools.min.js' %}"></script>
+    <script src="{% static 'include/rs-plugin/js/jquery.themepunch.revolution.min.js' %}"></script>
+    <script src="{% static 'include/rs-plugin/js/addons/revolution.addon.slicey.min.js' %}"></script>
+
+    <script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.actions.min.js' %}"></script>
+    <script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+    <script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+    <script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+    <script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.migration.min.js' %}"></script>
+    <script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+    <script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+    <script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+    <script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.video.min.js' %}"></script>
+
+    <script>
+        function showTime() {
+            var date = new Date();
+            var h = date.getHours(); // 0 - 23
+            var m = date.getMinutes(); // 0 - 59
+            var s = date.getSeconds(); // 0 - 59
+            var session = "";
+
+            if (h == 0) {
+                h = 12;
+            }
+
+            if (h > 12) {
+                h = h - 0;
+                session = "";
+            }
+
+            h = (h < 10) ? "0" + h : h;
+            m = (m < 10) ? "0" + m : m;
+            s = (s < 10) ? "0" + s : s;
+
+            var time = h + ":" + m + ":" + s + " " + session;
+            document.getElementById("MyClockDisplay").innerText = time;
+            document.getElementById("MyClockDisplay").textContent = time;
+
+            setTimeout(showTime, 1000);
+
+        }
+
+        showTime();
+    </script>
+
+
+    <script>
+
+        jQuery(document).ready(function () {
+
+            if (!jQuery('body').hasClass('device-touch')) {
+
+                var lFollowX = 0,
+                    lFollowY = 0,
+                    x = 0,
+                    y = 0,
+                    friction = 1 / 30;
+
+                function moveBackground() {
+                    x += (lFollowX - x) * friction;
+                    y += (lFollowY - y) * friction;
+
+                    translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
+
+                    jQuery('.move-bg').css({
+                        '-webit-transform': translate,
+                        '-moz-transform': translate,
+                        'transform': translate
+                    });
+
+                    window.requestAnimationFrame(moveBackground);
+                }
+
+                jQuery(window).on('mousemove click', function (e) {
+
+                    var lMouseX = Math.max(-100, Math.min(100, jQuery(window).width() / 2 - e.clientX));
+                    var lMouseY = Math.max(-100, Math.min(100, jQuery(window).height() / 2 - e.clientY));
+                    lFollowX = (10 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+                    lFollowY = (10 * lMouseY) / 100;
+
+                });
+
+                moveBackground();
+
+                jQuery(".book-wrap").hover3d({
+                    selector: ".book-card",
+                    shine: false,
+                });
+
+            }
+
+        });
+
+    </script>
+
+    <script>
+        // Owl Carousel Scripts
+        jQuery(window).on('pluginCarouselReady', function () {
+            $('#oc-teachers').owlCarousel({
+                items: 1,
+                margin: 30,
+                nav: true,
+                navText: ['<i class="icon-line-arrow-left"></i>', '<i class="icon-line-arrow-right"></i>'],
+                dots: false,
+                smartSpeed: 300,
+                stagePadding: 60,
+                responsive: {
+                    768: { stagePadding: 100, margin: 30, items: 1 },
+                    991: { stagePadding: 100, margin: 40, smartSpeed: 400, items: 2 },
+                    1200: { stagePadding: 100, margin: 40, smartSpeed: 400, items: 2 }
+                },
+            });
+        });
+
+        //Current Week
+        Date.prototype.getWeek = function (start) {
+            //Calcing the starting point
+            start = start || 0;
+            var today = new Date(this.setHours(0, 0, 0, 0));
+            var day = today.getDay() - start;
+            var date = today.getDate() - day;
+
+            // Grabbing Start/End Dates
+            var StartDate = new Date(today.setDate(date));
+            var EndDate = new Date(today.setDate(date + 6));
+            return [StartDate, EndDate];
+        }
+        var Dates = new Date().getWeek();
+        $("#week-details").text(Dates[0].toLocaleDateString() + ' - ' + Dates[1].toLocaleDateString());
+    </script>
+
+
+    <script>
+        var revapi52,
+            tpj = jQuery;
+        var $ = jQuery.noConflict();
+
+        tpj(document).ready(function () {
+            if (tpj("#rev_slider_52_1").revolution == undefined) {
+                revslider_showDoubleJqueryError("#rev_slider_52_1");
+            } else {
+                revapi52 = tpj("#rev_slider_52_1").show().revolution({
+                    sliderType: "hero",
+                    jsFileLocation: "include/rs-plugin/js/",
+                    sliderLayout: "fullscreen",
+                    dottedOverlay: "none",
+                    delay: 9000,
+                    navigation: {
+                    },
+                    responsiveLevels: [1240, 1024, 778, 480],
+                    visibilityLevels: [1240, 1024, 778, 480],
+                    gridwidth: [1240, 1024, 778, 480],
+                    gridheight: [1000, 768, 960, 720],
+                    lazyType: "none",
+                    parallax: {
+                        type: "scroll",
+                        origo: "slidercenter",
+                        speed: 400,
+                        levels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 48, 49, 50, 51, 55],
+                    },
+                    shadow: 0,
+                    spinner: "spinner3",
+                    autoHeight: "off",
+                    fullScreenAutoWidth: "off",
+                    fullScreenAlignForce: "off",
+                    fullScreenOffsetContainer: "",
+                    fullScreenOffset: "0px",
+                    disableProgressBar: "on",
+                    hideThumbsOnMobile: "off",
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 0,
+                    hideAllCaptionAtLilmit: 0,
+                    debugMode: false,
+                    fallbacks: {
+                        simplifyAll: "off",
+                        disableFocusListener: false,
+                    }
+                });
+            }
+        });	/*ready*/
+    </script>
+
+</body>
+
+</html>

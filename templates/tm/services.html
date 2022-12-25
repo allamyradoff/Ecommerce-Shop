@@ -1,0 +1,123 @@
+{% extends 'tm/base.html' %}
+{% load static %}
+{% block content %}
+
+
+<section id="page-title" style="margin-top: -140px; background-color: #008b40;">
+</section>
+
+
+<section id="content">
+    <div class="content-wrap">
+
+
+        <div class="section">
+
+            <div class="container">
+
+                <div class="heading-block center">
+                    <h2 style="color: #008b40;">Howa menziliň hyzmatlary.</h2>
+                </div>
+
+                <div class="row col-mb-50">
+                    {% for i in banner %}
+                    <div class="col-lg-4 text-center text-lg-left">
+                        <img data-animate="fadeInLeftBig" src="{{i.image.url}}" alt="iPhone">
+                    </div>
+                    {% endfor %}
+
+
+                    <div class="col-lg-4 col-md-6 topmargin">
+
+                        {% for i in mini_services %}
+                        <div class="w-100 mb-5">
+                            <div class="feature-box fbox-plain fbox-sm fbox-dark">
+                                <div class="fbox-icon">
+                                    <a href="#"><img src="{{i.icon.url}}" alt=""></a>
+                                </div>
+                                <div class="fbox-content">
+                                    <h3>{{i.title}}</h3>
+                                    <p>{{i.desc}}</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        {% endfor %}
+
+                        
+
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 topmargin">
+
+                        {% for i in mini_services_2 %}
+                        <div class="w-100 mb-5">
+                            <div class="feature-box fbox-plain fbox-sm fbox-dark">
+                                <div class="fbox-icon">
+                                    <a href="#"><img src="{{i.icon.url}}" alt=""></a>
+                                </div>
+                                <div class="fbox-content">
+                                    <h3>{{i.title}}</h3>
+                                    <p>{{i.desc}}</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        {% endfor %}
+
+                        
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="container clearfix" style="margin-top: 5%; margin-bottom: 5%;">
+
+            <div class="row col-mb-50">
+
+                
+
+                
+
+                
+
+            
+                {% for i in services %}
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="icon-thumbs-up i-alt"></i></a>
+                        </div>
+                        <div class="fbox-content">
+                            <h3>{{i.title}}<span class="subtitle">{{i.desc}}</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+               
+
+                
+
+            </div>
+
+        </div>
+
+
+
+
+        
+    </div>
+</section>
+
+
+{% endblock %}

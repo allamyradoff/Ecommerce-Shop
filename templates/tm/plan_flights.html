@@ -1,0 +1,117 @@
+{% extends 'tm/base.html' %}
+{% load static %}
+{% block content %}
+
+{% for i in banner %}
+<section id="page-title" class="page-title-parallax page-title-center page-title-dark include-header"
+    style="background-image: linear-gradient(to top, rgba(0,139,64 ,0.6), #39384D), url('{{i.image.url}}'); background-size: cover; padding: 120px 0;"
+    data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
+
+    <div class="container clearfix mt-4">
+        <div class="container">
+
+            <h1 class="titular-title font-weight-normal center font-secondary font-normal mb-5"
+                style="color: #008b40 !important;">{{i.name}}</h1>
+
+            <div class="clear mb-5"></div>
+
+
+
+        </div>
+
+    </div>
+
+</section>
+{% endfor %}
+
+<section id="content">
+    <div class="content-wrap">
+        <div class="container clearfix">
+
+            <div class="row gutter-40 col-mb-80">
+                <!-- Post Content
+            ============================================= -->
+                <div class="postcontent col-lg-12">
+                    <div class="line"></div>
+
+
+                    <div class="tabs tabs-alt clearfix" id="tab-7">
+
+                        <ul class="tab-nav clearfix">
+                            <li><a href="#tabs-25" style="color: #008b40;">Uçuş</a></li>
+                            <li><a href="#tabs-26" style="color: #008b40;">Gonuş</a></li>
+
+                        </ul>
+
+                        <div class="tab-container">
+
+                            <div class="tab-content clearfix" id="tabs-25">
+
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Uçuşyň ugry</th>
+                                            <th>Uçýan güni</th>
+                                            <th>Uçýan wagty</th>
+                                            <th>Gonýan wagty</th>
+                                            <th>Howa gämisiniň görnüşi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for i in flight_up %}
+                                        <tr>
+                                            <td>{{i.title}}</td>
+                                            <td>{{i.flight_day}}</td>
+                                            <td>{{i.departure}}</td>
+                                            <td>{{i.arrival}}</td>
+                                            <td>{{i.model_plane}}</td>
+                                        </tr>
+                                        {% endfor %}
+                                        
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-content clearfix" id="tabs-26">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Uçuşyň ugry</th>
+                                            <th>Uçýan güni</th>
+                                            <th>Uçýan wagty</th>
+                                            <th>Gonýan wagty</th>
+                                            <th>Howa gämisiniň görnüşi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for i in flight_down %}
+                                        <tr>
+                                            <td>{{i.title}}</td>
+                                            <td>{{i.flight_day}}</td>
+                                            <td>{{i.departure}}</td>
+                                            <td>{{i.arrival}}</td>
+                                            <td>{{i.model_plane}}</td>
+                                        </tr>
+                                        {% endfor %}
+                                        
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="line"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

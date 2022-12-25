@@ -1,0 +1,53 @@
+{% extends 'tm/base.html' %}
+{% load static %}
+{% block content %}
+<section id="page-title" class="page-title-parallax page-title-center page-title-dark include-header"
+    style="background-image: linear-gradient(to top, rgba(0,139,64 ,0.6), #39384D), url('{{services.image.url}}'); background-size: cover; padding: 120px 0;"
+    data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
+
+    <div class="container clearfix mt-4">
+        <div class="container">
+
+            <h1 class="titular-title font-weight-normal center font-secondary font-normal mb-5"
+                style="color: #008b40 !important;">Howa hereketini dolandyryş gullugy</h1>
+
+            <div class="clear mb-5"></div>
+
+
+
+        </div>
+
+    </div>
+
+</section><!-- #page-title end -->
+
+<section id="content">
+    <div class="content-wrap">
+        <div class="container clearfix">
+
+            <div class="row gutter-40 col-mb-80">
+
+                <div class="postcontent col-lg-12">
+
+
+                    <div class="line my-5"></div>
+                    <div data-readmore="true"
+                        data-readmore-trigger-open="<i class='icon-angle-down i-plain i-large m-0 float-none'></i>"
+                        data-readmore-trigger-close="<i class='icon-angle-up i-plain i-large m-0 float-none'></i>">
+
+                        <p>{{services.full_desc | safe}}</p>
+
+                        <a href="#" class="read-more-trigger"></a>
+
+                    </div>
+                    <div class="line my-5"></div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

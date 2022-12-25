@@ -1,0 +1,77 @@
+{% extends 'tm/base.html' %}
+{% load static %}
+{% block content %}
+
+
+{% for i in banner_info %}
+<section id="page-title" class="page-title-parallax page-title-center page-title-dark include-header"
+    style="background-image: linear-gradient(to top, rgba(0,139,64 ,0.6), #39384D), url('{{i.image.url}}'); background-size: cover; padding: 120px 0;"
+    data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
+
+    <div class="container clearfix mt-4">
+        <div class="container">
+
+            <h1 class="titular-title font-weight-normal center font-secondary font-normal mb-5"
+                style="color: #008b40 !important;">{{i.title}}</h1>
+
+            <div class="clear mb-5"></div>
+
+
+
+        </div>
+
+    </div>
+
+</section>
+{% endfor %}
+
+
+<section id="content">
+    <div class="content-wrap">
+        <div class="container clearfix">
+
+
+
+            <div class="fancy-title title-center title-border topmargin-sm">
+                <h3>Howa menziliň gulluklary</h3>
+            </div>
+
+            <div class="owl-carousel image-carousel carousel-widget flip-card-wrapper clearfix" data-margin="20"
+                data-nav="true" data-pagi="false" data-items-xs="2" data-items-sm="2" data-items-md="2"
+                data-items-lg="3" data-items-xl="3" style="overflow: visible;">
+
+
+
+                {% for i in services %}
+                <div class="flip-card">
+                    <div class="flip-card-front dark" style="background-image: url('{{i.image.url}}');">
+                        <div class="flip-card-inner">
+                            <div class="card bg-transparent border-0">
+                                <div class="card-body">
+                                    <h3 class="card-title mb-0">{{i.title}}</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back" style="background-image: url('{{i.image.url}}');">
+                        <div class="flip-card-inner">
+                            <p class="mb-2 text-white">{{i.description}}</p>
+                            <a href="{% url 'services_detail' i.id %}">
+
+                                <button type="button" class="btn btn-outline-light mt-2">Ginişleýin</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+
+            </div>
+            <div class="fancy-title title-center title-border topmargin-sm">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

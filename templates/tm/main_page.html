@@ -1,0 +1,521 @@
+{% extends 'tm/base.html' %}
+{% load static %}
+{% block content %}
+
+{% for i in main_page_info %}
+<section id="slider" class="slider-element revslider-wrap h-auto include-header">
+
+    <div class="rev_slider_wrapper" style="background:#aaa;padding:0px;">
+        <div id="rev_slider_52_1_wrapper" class="rev_slider_wrapper fullscreen-container"
+            data-alias="mountain-parallax-header" data-source="gallery"
+            style="background:rgba(255,255,255,0);padding:0px;">
+            <!-- START REVOLUTION SLIDER 5.4.3.1 fullscreen mode -->
+            <div id="rev_slider_52_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.3.1">
+                <ul>
+                    <!-- SLIDE  -->
+                    <li data-index="rs-126" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
+                        data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
+                        data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2=""
+                        data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
+                        data-param9="" data-param10="" data-description="">
+                        <!-- MAIN IMAGE -->
+                        <img src="{{i.banner_background.url}}" alt="Image" data-bgposition="center center"
+                            data-kenburns="on" data-duration="5000" data-ease="Power4.easeOut" data-scalestart="150"
+                            data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="20"
+                            data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10"
+                            class="rev-slidebg" data-no-retina>
+                        <!-- LAYERS -->
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption   tp-resizeme  blurslider-gradient rs-parallaxlevel-14"
+                            id="slide-126-layer-2" data-x="['center','center','center','center']"
+                            data-hoffset="['1','1','1','1']" data-y="['middle','middle','middle','middle']"
+                            data-voffset="['-239','-239','-189','-149']" data-fontsize="['120','120','120','80']"
+                            data-lineheight="['120','120','120','60']" data-letterspacing="['-10','-10','-10','-5']"
+                            data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                            data-responsive_offset="on"
+                            data-frames='[{"delay":50,"speed":3000,"frame":"0","from":"y:50px;sX:0.3;sY:0.3;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['center','center','center','center']" data-paddingtop="[20,20,20,20]"
+                            data-paddingright="[10,10,10,10]" data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[10,10,10,10]"
+                            style="z-index: 5; white-space: nowrap; font-size: 120px; line-height: 120px; font-weight: 700; color: #ffffff; letter-spacing: -10px;font-family:Poppins;">
+                        </div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption   tp-resizeme" id="slide-126-layer-1"
+                            data-x="['center','center','center','center']" data-hoffset="['-50','-50','-50','-50']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['130','130','130','80']"
+                            data-width="none" data-height="none" data-whitespace="nowrap" data-type="image"
+                            data-responsive_offset="on"
+                            data-frames='[{"delay":50,"speed":3000,"frame":"0","from":"sX:0.7;sY:0.7;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 6;"><img src="{{i.banner_image.url}}" alt="Image"
+                                data-ww="['1050px','1050px','861','689px']" data-hh="['610px','610px','500px','400px']"
+                                data-no-retina> </div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-126-layer-10"
+                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                            data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']"
+                            data-width="full" data-height="200" data-whitespace="nowrap" data-type="shape"
+                            data-basealign="slide" data-responsive_offset="on"
+                            data-frames='[{"delay":50,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 7;background:linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);">
+                        </div>
+
+                        <!-- LAYER NR. 4 -->
+                        <div class="tp-caption   tp-resizeme" id="slide-126-layer-4"
+                            data-x="['left','left','left','left']" data-hoffset="['100','100','100','100']"
+                            data-y="['bottom','bottom','bottom','bottom']" data-voffset="['10','10','10','10']"
+                            data-width="none" data-height="none" data-whitespace="nowrap" data-type="image"
+                            data-basealign="slide" data-responsive_offset="on"
+                            data-frames='[{"delay":300,"speed":2000,"frame":"0","from":"y:100px;sX:1.1;sY:1.1;opacity:0;fb:10px;","to":"o:1;rY:180;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 8;">
+                            <div class="rs-looped rs-slideloop" data-easing="Linear.easeNone" data-speed="40"
+                                data-xs="0" data-xe="500" data-ys="0" data-ye="0"><img
+                                    src="{% static 'include/rs-plugin/demos/assets/images/cloud1.png' %}" alt="Image"
+                                    data-ww="['500px','500px','500px','500px']"
+                                    data-hh="['273px','273px','273px','273px']" data-no-retina> </div>
+                        </div>
+
+                        <!-- LAYER NR. 5 -->
+                        <div class="tp-caption   tp-resizeme" id="slide-126-layer-5"
+                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                            data-y="['bottom','bottom','bottom','bottom']" data-voffset="['10','10','10','10']"
+                            data-width="none" data-height="none" data-whitespace="nowrap" data-type="image"
+                            data-basealign="slide" data-responsive_offset="on"
+                            data-frames='[{"delay":300,"speed":2000,"frame":"0","from":"sX:1.1;sY:1.1;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 9;">
+                            <div class="rs-looped rs-slideloop" data-easing="Linear.easeNone" data-speed="100"
+                                data-xs="0" data-xe="500" data-ys="0" data-ye="0"><img
+                                    src="{% static 'include/rs-plugin/demos/assets/images/cloud2.png' %}" alt="Image"
+                                    data-ww="['500px','500px','500px','500px']"
+                                    data-hh="['273px','273px','273px','273px']" data-no-retina> </div>
+                        </div>
+
+                        <!-- LAYER NR. 6 -->
+                        <div class="tp-caption   tp-resizeme" id="slide-126-layer-6"
+                            data-x="['right','right','right','right']" data-hoffset="['150','150','150','150']"
+                            data-y="['bottom','bottom','bottom','bottom']" data-voffset="['10','10','10','10']"
+                            data-width="none" data-height="none" data-whitespace="nowrap" data-type="image"
+                            data-basealign="slide" data-responsive_offset="on"
+                            data-frames='[{"delay":300,"speed":2000,"frame":"0","from":"sX:1.1;sY:1.1;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 10;">
+                            <div class="rs-looped rs-slideloop" data-easing="Linear.easeNone" data-speed="120"
+                                data-xs="0" data-xe="500" data-ys="0" data-ye="0"><img
+                                    src="{% static 'include/rs-plugin/demos/assets/images/cloud3.png' %}" alt="Image"
+                                    data-ww="['500px','500px','500px','500px']"
+                                    data-hh="['273px','273px','273px','273px']" data-no-retina> </div>
+                        </div>
+
+                        <!-- LAYER NR. 7 -->
+                        <div class="tp-caption   tp-resizeme" id="slide-126-layer-11"
+                            data-x="['left','left','left','left']" data-hoffset="['-200','-200','-200','-200']"
+                            data-y="['bottom','bottom','bottom','bottom']" data-voffset="['10','10','10','10']"
+                            data-width="none" data-height="none" data-whitespace="nowrap" data-type="image"
+                            data-basealign="slide" data-responsive_offset="on"
+                            data-frames='[{"delay":300,"speed":2000,"frame":"0","from":"sX:1.1;sY:1.1;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 11;">
+                            <div class="rs-looped rs-slideloop" data-easing="Linear.easeNone" data-speed="80"
+                                data-xs="0" data-xe="500" data-ys="0" data-ye="0"><img
+                                    src="{% static 'include/rs-plugin/demos/assets/images/cloud3.png' %}" alt="Image"
+                                    data-ww="['500px','500px','500px','500px']"
+                                    data-hh="['273px','273px','273px','273px']" data-no-retina> </div>
+                        </div>
+
+                        <!-- LAYER NR. 8 -->
+                        <div class="tp-caption   tp-resizeme" id="slide-126-layer-12"
+                            data-x="['right','right','right','right']" data-hoffset="['-200','-200','-200','-200']"
+                            data-y="['bottom','bottom','bottom','bottom']" data-voffset="['10','10','10','10']"
+                            data-width="none" data-height="none" data-whitespace="nowrap" data-type="image"
+                            data-basealign="slide" data-responsive_offset="on"
+                            data-frames='[{"delay":300,"speed":2000,"frame":"0","from":"y:100px;sX:1.1;sY:1.1;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 12;">
+                            <div class="rs-looped rs-slideloop" data-easing="Linear.easeNone" data-speed="200"
+                                data-xs="0" data-xe="500" data-ys="0" data-ye="0"><img
+                                    src="{% static 'include/rs-plugin/demos/assets/images/cloud1.png' %}" alt="Image"
+                                    data-ww="['500px','500px','500px','500px']"
+                                    data-hh="['273px','273px','273px','273px']" data-no-retina> </div>
+                        </div>
+
+                        <!-- LAYER NR. 9 -->
+                        <div class="tp-caption rev-btn " id="slide-126-layer-3"
+                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                            data-y="['bottom','bottom','bottom','bottom']" data-voffset="['100','100','100','150']"
+                            data-width="none" data-height="none" data-whitespace="nowrap" data-type="button"
+                            data-actions='[{"event":"click","action":"scrollbelow","offset":"40px","delay":"","speed":"1500","ease":"Power1.easeInOut"}]'
+                            data-responsive_offset="on" data-responsive="off"
+                            data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"y:50px;sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"200","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgba(255,255,255,1);bg:linear-gradient(90deg, rgba(243,130,60,1) 0%, rgba(255,85,124,1) 100%);bs:solid;bw:0 0 0 0;"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[30,30,30,30]" data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[30,30,30,30]"
+                            style="z-index: 13; white-space: nowrap; font-size: 15px; line-height: 60px; font-weight: 700; color: rgba(255,255,255,1); font-family:Poppins;background:linear-gradient(90deg, rgba(255,85,124,1) 0%, rgba(243,130,60,1) 100%);border-color:rgba(0,0,0,1);-webkit-box-shadow:0px 10px 20px 0px rgba(0,0,0,0.35);-moz-box-shadow:0px 10px 20px 0px rgba(0,0,0,0.35);box-shadow:0px 10px 20px 0px rgba(0,0,0,0.35);cursor:pointer;">
+                        </div>
+
+                        <!-- LAYER NR. 10 -->
+                        <div class="tp-caption   tp-resizeme" id="slide-126-layer-8"
+                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                            data-y="['bottom','bottom','bottom','bottom']" data-voffset="['50','30','30','30']"
+                            data-width="['none','640','480','360']" data-height="none"
+                            data-whitespace="['nowrap','normal','normal','normal']" data-type="text"
+                            data-responsive_offset="on"
+                            data-frames='[{"delay":600,"speed":1000,"frame":"0","from":"y:50px;rX:90deg;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[10,10,10,10]" data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[20,20,20,20]"
+                            style="z-index: 14; white-space: nowrap; font-size: 15px; line-height: 20px; font-weight: 600; color: #888888; letter-spacing: 10px;font-family:poppins;text-transform:uppercase;">
+                        </div>
+                    </li>
+                </ul>
+                <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+            </div>
+        </div>
+    </div>
+
+</section>
+{% endfor %}
+
+
+<section id="content">
+
+    <div class="content-wrap pb-0" style="background-color: #1E232A;">
+
+        <div class="section p-0 m-0">
+
+            <div class="container clearfix">
+
+                {% for i in main_page_info %}
+                <div class="container clearfix">
+
+                    <div class="row clearfix">
+                        <div class="col-lg-4 offset-lg-1">
+                            <img src="{{i.mini_about_image.url}}" alt="Book Mockup" style="margin-top: 10px;">
+                        </div>
+                        <div class="col-lg-6 offset-lg-1">
+                            <h2 class="font-weight-bold mb-2 nott" style="font-size: 36px;">Mary Halkara Howa
+                                Menzili
+                            </h2>
+                            <p class="dark lead" style="color: black;">
+                                {{i.mini_about}}
+                            </p>
+                            <a href="#"
+                                class="button button-large button-white button-light text-capitalize button-rounded">Giňişleýin</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+
+
+
+
+
+            </div>
+
+            <div class="section bg-transparent my-0 pb-1">
+                <div class="container">
+                    <div class="heading-block" style="max-width: 500px">
+                        <h3 class="font-weight-bold nott mb-4" style="font-size: 42px; letter-spacing: -1px;">
+                            <span>Howa Menzili</span>.
+                        </h3>
+                        <p>Mary halkara howa menzili hyzmatdaşlary hoşniýetli garşylaýar hem-de aşakdaky
+                            hyzmatlary hödürleýär:</p>
+                    </div>
+                </div>
+                <div id="oc-teachers" class="owl-carousel owl-carousel-full image-carousel carousel-widget customjs">
+                    {% for i in media %}
+                    <div class="oc-item">
+                        <div class="jumbotron m-0 dark p-5 d-flex justify-content-center align-items-md-end flex-column"
+                            style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0, 0.8)), url('{{i.media_image.url}}') no-repeat center center / cover;">
+                            <div class="jumbotron-text mt-0 mt-md-auto row align-items-center">
+                                <div class="col-md-8">
+                                    <div class="testimonial bg-transparent shadow-none border-0 p-0">
+                                        <h2 class="mb-1">{{i.title}}</h2>
+                                        <div class="testi-meta ls1 mb-4 text-light font-weight-normal">
+                                            {{i.category_media}}</div>
+                                        <div class="testi-content">
+                                            <p>{{i.description}}</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4 d-flex justify-content-md-center mt-3 mt-md-0">
+                                    <a href="{{i.link}}" data-lightbox="iframe" class="play-icon"><i
+                                            class="icon-play1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+
+                </div>
+            </div>
+
+            <div class="container clearfix">
+
+
+
+
+
+                <div class="clear topmargin-sm bottommargin-lg"></div>
+
+                <div class="row clearfix">
+                    <div class="col-lg-6">
+                        <div class="heading-block dark text-left border-bottom-0">
+                            <h3 class="nott font-weight-normal ls0" style="font-size: 36px; color: #008b40 !important;">
+                                Howa menziliniň Buýruklary
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="portfolio" class="portfolio row grid-container gutter-50">
+
+                    <div class="portfolio-item col-12 col-sm-6 col-md-4 mb-3 mb-sm-0">
+                        {% for i in decress %}
+                        <div class="book-wrap">
+                            <div class="book-card">
+                                <a href="#" class="item-quick-view book-image"><img style="border-radius: 20px;"
+                                        src="{{i.media_image.url}}" alt="Book Image"></a>
+                                <div class="book-detail">
+                                    <h2 class="book-title"><a href="#" style="font-size: 20px;">{{i.title}}</a></h2>
+                                    <div class="button button-white button-light text-capitalize button-circle">
+                                        <i class="icon-line-zoom-in"></i><span>Giňişleýin</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+                        {% endfor %}
+
+
+                    </div>
+
+
+                    <div class="portfolio-item col-12 col-sm-6 col-md-4 mb-3 mb-sm-0">
+
+                        {% for i in decress_2 %}
+                        <div class="book-wrap">
+                            <div class="book-card">
+                                <a href="#" class="item-quick-view book-image"><img style="border-radius: 20px;"
+                                        src="{{i.media_image.url}}" alt="Book Image"></a>
+                                <div class="book-detail">
+                                    <h2 class="book-title"><a href="#" style="font-size: 20px;">{{i.title}}</a></h2>
+                                    <div class="button button-white button-light text-capitalize button-circle">
+                                        <i class="icon-line-zoom-in"></i><span>Giňişleýin</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+                        {% endfor %}
+
+
+
+                    </div>
+
+                    <div class="portfolio-item col-12 col-sm-6 col-md-4 mb-3 mb-sm-0">
+
+                        {% for i in decress_3 %}
+                        <div class="book-wrap">
+                            <div class="book-card">
+                                <a href="#" class="item-quick-view book-image"><img style="border-radius: 20px;"
+                                        src="{{i.media_image.url}}" alt="Book Image"></a>
+                                <div class="book-detail">
+                                    <h2 class="book-title"><a href="#" style="font-size: 20px;">{{i.title}}</a></h2>
+                                    <div class="button button-white button-light text-capitalize button-circle">
+                                        <i class="icon-line-zoom-in"></i><span>Giňişleýin</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+                        {% endfor %}
+
+
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="section section-schedule">
+        <div class="container">
+            <div class="heading-block border-bottom-0 bottommargin-lg" style="max-width: 700px">
+                <h2 class="font-weight-bold mb-2 nott" style="font-size: 42px; letter-spacing: -1px; color: #333;">
+                    Gatnawlaryň
+                    <span>rejesi</span>.
+                </h2>
+                <!-- <p class="lead">Energistically syndicate team building synergy after efficient human capital. Assertively underwhelm sticky solutions.</p> -->
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-lg-4 col-md-5 mt-4 mt-md-0 sticky-sidebar-wrap">
+                    <div class="sticky-sidebar">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <a class="nav-link active" id="sc-mon-tab" data-toggle="pill" href="#sc-mon" role="tab"
+                                aria-controls="sc-mon" aria-selected="true">Uçuş</a>
+                            <a class="nav-link" id="sc-tue-tab" data-toggle="pill" href="#sc-tue" role="tab"
+                                aria-controls="sc-tue" aria-selected="false">Gonuş</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 mt-5 mt-md-0">
+                    <!-- <h5 id="week-details" class="font-body text-black-50 d-inline-block">Date</h5><span class="text-black-50"> (Monday - Sunday)</span> -->
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane schedule-wrap fade show active" id="sc-mon" role="tabpanel"
+                            aria-labelledby="sc-mon-tab">
+                            <dl class="row no-gutters table mb-0">
+                                {% for i in flight_up %}
+                                <dt class="col-sm-3">
+                                    <div class="schedule-time font-primary">{{i.departure}} / {{i.arrival}} </div>
+                                </dt>
+                                <dd class="col-sm-9 d-flex justify-content-between align-items-center">
+                                    <div class="schedule-desc font-primary">{{i.title}}<small>
+                                            {{i.model_plane}}</small></div>
+                                    <a href="#"><img src="{{i.flight_image.url}}" alt=""
+                                            class="schedule-teacher"></a>
+                                </dd>                              
+                                {% endfor %}
+
+                            </dl>
+                        </div>
+
+                        <div class="tab-pane schedule-wrap fade" id="sc-tue" role="tabpanel"
+                            aria-labelledby="sc-tue-tab">
+                            <dl class="row no-gutters table mb-0">
+
+                                {% for i in flight_down %}
+                                <dt class="col-sm-3">
+                                    <div class="schedule-time font-primary">{{i.departure}} / {{i.arrival}} </div>
+                                </dt>
+                                <dd class="col-sm-9 d-flex justify-content-between align-items-center">
+                                    <div class="schedule-desc font-primary">{{i.title}}<small>
+                                            {{i.model_plane}}</small></div>
+                                    <a href="#"><img src="{{i.flight_image.url}}" alt=""
+                                            class="schedule-teacher"></a>
+                                </dd>                              
+                                {% endfor %}
+
+
+
+                            </dl>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div id="section-testimonial" class="section m-0 center" style="background: url('demos/writer/images/section/bg2.jpg') center center no-repeat; background-size: cover; padding: 100px 0;">
+                        <div class="container clearfix">
+
+                            <div class="heading-block border-bottom-0">
+                                <i class="icon-book3 i-plain i-large mx-auto center"></i>
+                                <h3 class="nott font-weight-normal ls0" style="font-size: 36px;">Reader's Feedback</h3>
+                            </div>
+
+                        </div>
+
+                        <div class="fslider testimonial testimonial-full writer-feedback bg-transparent border-0 shadow-none" data-animation="fade" data-arrows="false" style="max-width: none;">
+                            <div class="flexslider">
+                                <div class="slider-wrap mx-auto" style="max-width: 650px;">
+                                    <div class="slide">
+                                        <div class="testi-image">
+                                            <a href="#"><img src="images/testimonials/3.jpg" alt="Customer Testimonails"></a>
+                                        </div>
+                                        <div class="testi-content">
+                                            <p>Similique fugit repellendus expedita excepturi iure provident quia eaque. Repellendus, vero numquam?</p>
+                                            <div class="testi-meta">
+                                                Steve Jobs
+                                                <span>Apple Inc.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="testi-image">
+                                            <a href="#"><img src="images/testimonials/2.jpg" alt="Customer Testimonails"></a>
+                                        </div>
+                                        <div class="testi-content">
+                                            <p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
+                                            <div class="testi-meta">
+                                                Collis Ta'eed
+                                                <span>Envato Inc.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="testi-image">
+                                            <a href="#"><img src="images/testimonials/1.jpg" alt="Customer Testimonails"></a>
+                                        </div>
+                                        <div class="testi-content">
+                                            <p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum!</p>
+                                            <div class="testi-meta">
+                                                John Doe
+                                                <span>XYZ Inc.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div> -->
+</section>
+
+<section id="content">
+    <div class="content-wrap">
+        <div class="container clearfix">
+
+
+
+            <div class="modal-on-load" data-target="#myModal1"></div>
+
+            <!-- Modal -->
+            <div class="modal1 mfp-hide" id="myModal1">
+                <div class="block mx-auto" style="background-color: #FFF; max-width: 600px;">
+                    <div class="text-center" style="padding: 50px;">
+                        <h3 class="text-uppercase">Check out a Video</h3>
+                        <iframe src="https://player.vimeo.com/video/139208268?badge=0" width="500" height="210"
+                            allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <p class="lead mb-0 topmargin-sm">Media embedded from Vimeo</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}

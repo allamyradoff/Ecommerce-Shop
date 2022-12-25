@@ -1,0 +1,33 @@
+{% extends 'tm/base.html' %}
+{% load static %}
+{% block content %}
+<section id="page-title" style="margin-top: -5%; background-color: #008b40;">
+
+    <div class="container clearfix">
+        <h1>Gallereýa</h1>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'index' %}">Baş sahypa</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Gallereýa</li>
+        </ol>
+    </div>
+
+</section>
+
+
+<section id="content">
+    <div class="content-wrap">
+        <div class="container clearfix">
+
+            
+            <div id="demo-gallery" class="masonry-thumbs grid-container grid-3" data-big="2" data-lightbox="gallery">
+                {% for i in gallery %}
+                <a href="{{i.image.url}}" data-lightbox="gallery-item" class="grid-item pf-icons pf-media"><img src="{{i.image.url}}" alt="{{i.name}}"></a>
+                {% endfor %}
+                
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

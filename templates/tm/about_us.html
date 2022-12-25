@@ -1,0 +1,72 @@
+{% extends 'tm/base.html' %}
+{% load static %}
+{% block content %}
+
+{% for i in about_us %}
+<section id="page-title" class="page-title-parallax page-title-center page-title-dark include-header"
+    style="background-image: linear-gradient(to top, rgba(0,139,64 ,0.6), #39384D), url('{{i.image.url}}'); background-size: cover; padding: 400px 0;"
+    data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
+
+    <div class="container clearfix mt-4">
+        <h1>{{i.title}}</h1>
+
+    </div>
+
+</section><!-- #page-title end -->
+{% endfor %}
+<!-- Content
+		============================================= -->
+<section id="content" >
+
+    <div class="content-wrap py-0 overflow-visible">
+        {% for i in about_us %}
+        <div class="card mx-auto mw-md border-0 shadow rounded-xl card-seo-about mb-5 mb-lg-0">
+            <div class="card-body p-5">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="heading-block border-bottom-0 mb-0">
+                            <h3 class="nott ls0 mb-3" style="color: #008b40;">{{i.title_to_sections}}
+                            </h3>
+                            <p>{{i.description | safe}}</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+
+
+        <!-- Features
+				============================================= -->
+        <div class="section bg-transparent">
+            <div class="container">
+                <div class="row col-mb-30 align-content-stretch">
+
+
+                    {% for i in about_us_image %}
+                    <div class="col-lg-3 col-md-6 d-flex">
+                        <a href="{{i.image.url}}" class="card h-shadow h-translate-y-sm all-ts">
+                            <div class="card-body p-5">
+                                <div class="feature-box flex-column">
+                                    <div class="fbox-image mb-5 text-center">
+                                        <img height="150" src="{{i.image.url}}" alt="{{i.title}}">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    {% endfor %}
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</section><!-- #content end -->
+{% endblock %}
